@@ -553,7 +553,8 @@ img {
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .filter-btn:hover,
