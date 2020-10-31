@@ -238,18 +238,18 @@ img {
   animation-duration: 700ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-timing-function: var(--timing-function);
 }
 
 @keyframes changeBtnStyle {
   0% {
-    color: white;
-    background-color: #2196f3;
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
   }
 
   100% {
-    color: black;
-    background-color: white;
+    color: var(--standart-black);
+    background-color: var(--main-white-color);
   }
 }
 
