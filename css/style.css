@@ -56,72 +56,6 @@ img {
   padding: 0;
 }
 
-/* Backdrop + Modal */
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity 250ms var(--timing-function);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  height: 581px;
-  width: 528px;
-  text-align: right;
-  background-color: var(--main-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transform: translate(-50%, -50%);
-  transition: transform 250ms var(--timing-function);
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  width: 30px;
-  height: 30px;
-
-  padding: 7px 9px;
-  background-color: var(--main-white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: var(--accent-color);
-  border: 1px solid transparent;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  color: var(--main-white-color);
-}
-
-.modal-close-btn > .icon {
-  margin: 0;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 250ms var(--timing-function);
-}
-
 /* Header */
 .header {
   border-bottom: 1px solid #ececec;
@@ -600,6 +534,72 @@ img {
 .social-box .social-link:focus {
   background-color: var(--accent-color);
 }
+
+/* Backdrop + Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: 581px;
+  width: 528px;
+  text-align: right;
+  background-color: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  padding: 7px 9px;
+  background-color: var(--main-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: var(--main-white-color);
+}
+
+.modal-close-btn > .icon {
+  margin: 0;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms var(--timing-function);
+}
+
 /* Визуал текста для Портфолио */
 .portfolio {
   padding: 94px 0;
