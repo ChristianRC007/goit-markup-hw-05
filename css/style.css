@@ -233,6 +233,26 @@ img {
   border-radius: 4px;
 }
 
+.hero-btn:hover {
+  animation-name: changeBtnStyle;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes changeBtnStyle {
+  0% {
+    color: white;
+    background-color: #2196f3;
+  }
+
+  100% {
+    color: black;
+    background-color: white;
+  }
+}
+
 /* Features */
 .features {
   padding-top: 94px;
