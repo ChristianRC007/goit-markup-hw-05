@@ -161,8 +161,11 @@ img {
 }
 
 .icon {
-  margin-right: 10px;
   fill: currentColor;
+}
+
+.info-link > .icon {
+  margin-right: 10px;
 }
 
 /* Logo */
